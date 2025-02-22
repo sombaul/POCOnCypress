@@ -1,0 +1,20 @@
+{
+  "name": "cypress-practice",
+  "version": "1.0.0",
+  "description": "this is for cypress practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --spec cypress/integration/examples/Test8.js --env url=\"https://rahulshettyacademy.com\" --headed --browser chrome",
+    "dashboardTest": "npx cypress run --record  --key 690dbd1b-486d-46ea-ba32-e5051404e685 --spec cypress/integration/examples/*.js --headed --browser chrome"
+  },
+  "author": "Somnath Baul",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.14.2",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.2"
+  }
+}
